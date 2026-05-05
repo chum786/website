@@ -1,0 +1,129 @@
+> ﻿<!DOCTYPE html>
+> <html lang="en">
+> <head>
+> <meta charset="UTF-8">
+> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+> <title>Prime Fidelity Insurance by Salma | California Insurance Quotes</title>
+>
+> <style>
+> body {
+>  font-family: Arial, sans-serif;
+>  margin: 0;
+>  background: #f7f7f7;
+>  color: #333;
+> }
+> header {
+>  background: #0d3b66;
+>  color: white;
+>  padding: 20px;
+>  text-align: center;
+> }
+> .hero {
+>  padding: 60px 20px;
+>  text-align: center;
+>  background: #1d6fa5;
+>  color: white;
+> }
+> .hero h1 { font-size: 32px; }
+> .btn {
+>  display: inline-block;
+>  padding: 12px 20px;
+>  margin-top: 15px;
+>  background: #f4a261;
+>  color: white;
+>  text-decoration: none;
+>  border-radius: 5px;
+> }
+> .section {
+>  padding: 40px 20px;
+>  text-align: center;
+> }
+> .cards {
+>  display: flex;
+>  flex-wrap: wrap;
+>  justify-content: center;
+>  gap: 20px;
+> }
+> .card {
+>  background: white;
+>  padding: 20px;
+>  width: 280px;
+>  border-radius: 8px;
+>  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+> }
+> footer {
+>  background: #0d3b66;
+>  color: white;
+>  text-align: center;
+>  padding: 20px;
+> }
+> input, textarea {
+>  width: 90%;
+>  padding: 10px;
+>  margin: 8px 0;
+> }
+> </style>
+>
+> </head>
+>
+> <body>
+>
+> <header>
+>  <h2>Prime Fidelity Insurance by Salma</h2>
+>  <p>Serving All of California</p>
+> </header>
+>
+> <section class="hero">
+>  <h1>Affordable Insurance You Can Trust</h1>
+>  <p>Auto • Home • Commercial Coverage</p>
+>  <a class="btn" href="#quote">Get a Free Quote</a>
+> </section>
+>
+> <section class="section">
+>  <h2>Our Services</h2>
+>  <div class="cards">
+>
+>    <div class="card">
+>      <h3>Auto Insurance</h3>
+>      <p>Save on reliable car insurance with customized coverage options.</p>
+>    </div>
+>
+>    <div class="card">
+>      <h3>Home Insurance</h3>
+>      <p>Protect your home and everything in it with affordable plans.</p>
+>    </div>
+>
+>    <div class="card">
+>      <h3>Commercial Insurance</h3>
+>      <p>Secure your business with tailored coverage solutions.</p>
+>    </div>
+>
+>  </div>
+> </section>
+>
+> <section class="section" id="quote">
+>  <h2>Request a Free Quote</h2>
+>
+>  <form action="mailto:your@email.com" method="post" enctype="text/plain">
+>    <input type="text" name="Name" placeholder="Full Name" required><br>
+>    <input type="tel" name="Phone" placeholder="Phone Number" required><br>
+>    <input type="email" name="Email" placeholder="Email Address"><br>
+>    <textarea name="Details" placeholder="What type of insurance do you need?"></textarea><br>
+>    <button class="btn" type="submit">Submit Request</button>
+>  </form>
+> </section>
+>
+> <section class="section">
+>  <h2>Why Choose Us?</h2>
+>  <p>✔ Personalized service<br>
+>    ✔ Fast quotes<br>
+>    ✔ Multiple carrier options<br>
+>    ✔ Local California expertise</p>
+> </section>
+>
+> <footer>
+>  <p>© 2026 Prime Fidelity Insurance by Salma</p>
+> </footer>
+>
+> </body>
+> </html>
