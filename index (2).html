@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Fidelity Insurance Agency – Auto, Home, Business & More | Salma Ahmad</title>
+  <meta name="description" content="Prime Fidelity Insurance Agency offers auto, homeowners, commercial, general liability and business insurance. We insure all driver types — SR-22, unlicensed, international license. Call Salma Ahmad at (909) 315-3737.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Nunito',sans-serif;background:#f7faf9;color:#1a3d2e}
+    .hero{background:linear-gradient(135deg,#1a6e56 0%,#1d9e75 60%,#5DCAA5 100%);padding:3rem 2rem 5rem;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-60px;right:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,0.07)}
+    .hero::after{content:'';position:absolute;bottom:-80px;left:-60px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,0.05)}
+    .logo-name{font-family:'Lora',serif;font-size:1rem;font-weight:600;color:rgba(255,255,255,0.9);letter-spacing:0.04em;margin-bottom:1rem}
+    .badge{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:5px 14px;border-radius:20px;margin-bottom:1.2rem;text-transform:uppercase}
+    .hero h1{font-family:'Lora',serif;font-size:2.2rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:.8rem;position:relative;z-index:1}
+    .hero p{font-size:1.05rem;color:rgba(255,255,255,0.88);max-width:480px;margin:0 auto 1.5rem;line-height:1.6}
+    .trust-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+    .trust-chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);color:#fff;font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px}
+    .form-wrap{padding:0 1rem;max-width:560px;margin:0 auto}
+    .card-float{background:#fff;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,0.13);margin:-2.8rem auto 0;position:relative;z-index:10;padding:2rem 2rem 1.5rem}
+    .card-float h2{font-family:'Lora',serif;font-size:1.3rem;color:#1a3d2e;margin-bottom:.3rem;font-weight:600}
+    .card-float p.sub{font-size:13.5px;color:#5f7a70;margin-bottom:1.4rem}
+    .form-group{margin-bottom:1rem}
+    label{display:block;font-size:13px;font-weight:700;color:#2a5043;margin-bottom:5px}
+    input,select{width:100%;padding:11px 14px;border:1.5px solid #d0e8df;border-radius:10px;font-family:'Nunito',sans-serif;font-size:14.5px;color:#1a3d2e;outline:none;transition:border-color .2s;background:#fff}
+    input:focus,select:focus{border-color:#1d9e75}
+    .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .btn-call{width:100%;padding:14px;background:linear-gradient(135deg,#1d9e75,#0f6e56);border:none;border-radius:12px;color:#fff;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;cursor:pointer;margin-top:.5rem;transition:opacity .2s}
+    .btn-call:hover{opacity:.9}
+    .disclaimer{font-size:11.5px;color:#8aab9e;text-align:center;margin-top:.8rem;line-height:1.5}
+    .success-msg{display:none;text-align:center;padding:1.5rem 0}
+    .success-msg .icon{font-size:44px;margin-bottom:12px}
+    .success-msg h3{font-family:'Lora',serif;font-size:1.2rem;color:#1a3d2e;margin-bottom:6px}
+    .success-msg p{font-size:13.5px;color:#5f7a70}
+    .contact-bar{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;padding:1.8rem 1rem 0}
+    .contact-btn{display:flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;text-decoration:none;transition:opacity .2s}
+    .contact-btn:hover{opacity:.85}
+    .contact-btn.phone{background:#1d9e75;color:#fff}
+    .contact-btn.email{background:#f0faf5;color:#1a6e56;border:1.5px solid #1d9e75}
+    .services-section{padding:2.5rem 1.5rem;max-width:580px;margin:0 auto}
+    .section-title{font-family:'Lora',serif;font-size:1.25rem;color:#1a3d2e;font-weight:600;text-align:center;margin-bottom:.4rem}
+    .section-sub{font-size:13.5px;color:#5f7a70;text-align:center;margin-bottom:1.6rem}
+    .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .service-card{background:#fff;border:1.5px solid #d0e8df;border-radius:16px;padding:1.3rem 1.1rem;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.05);transition:transform .2s,box-shadow .2s}
+    .service-card:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,0.1)}
+    .service-card .sicon{font-size:30px;margin-bottom:8px}
+    .service-card h3{font-size:14px;font-weight:800;color:#1a3d2e;margin-bottom:4px}
+    .service-card p{font-size:12.5px;color:#5f7a70;line-height:1.45}
+    .service-card.highlight{background:linear-gradient(135deg,#f0faf5,#e0f5ec);border-color:#1d9e75}
+    .special-section{background:linear-gradient(135deg,#0f6e56,#1a6e56);padding:2.5rem 1.5rem;text-align:center}
+    .special-section h2{font-family:'Lora',serif;color:#fff;font-size:1.3rem;margin-bottom:.4rem}
+    .special-section .intro{color:rgba(255,255,255,.82);font-size:13.5px;margin-bottom:1.6rem;max-width:440px;margin-left:auto;margin-right:auto}
+    .driver-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px;margin:0 auto 1.5rem}
+    .driver-card{background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.2);border-radius:14px;padding:1.1rem 1rem;text-align:center}
+    .driver-card .dicon{font-size:26px;margin-bottom:6px}
+    .driver-card h3{font-size:13.5px;font-weight:800;color:#fff;margin-bottom:4px}
+    .driver-card p{font-size:12px;color:rgba(255,255,255,.75);line-height:1.4}
+    .btn-special{display:inline-block;background:#fff;color:#1a6e56;font-family:'Nunito',sans-serif;font-size:.95rem;font-weight:800;padding:12px 28px;border-radius:12px;text-decoration:none;cursor:pointer;border:none;transition:opacity .2s}
+    .btn-special:hover{opacity:.88}
+    .section{padding:2.5rem 1.5rem;max-width:580px;margin:0 auto}
+    .carrier-group{margin-bottom:1.4rem}
+    .carrier-group-label{font-size:11.5px;font-weight:800;color:#1d9e75;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:8px;padding-left:2px}
+    .carrier-chips{display:flex;flex-wrap:wrap;gap:8px}
+    .carrier-chip{background:#f0faf5;border:1.5px solid #c8e8d8;border-radius:20px;padding:6px 14px;font-size:13px;font-weight:700;color:#1a3d2e}
+    .steps{display:flex;flex-direction:column;gap:1rem}
+    .step{display:flex;align-items:flex-start;gap:14px;background:#f0faf5;border-radius:14px;padding:1rem 1.1rem}
+    .step-num{width:36px;height:36px;border-radius:50%;background:#1d9e75;color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .step-text h3{font-size:14px;font-weight:700;color:#1a3d2e;margin-bottom:3px}
+    .step-text p{font-size:13px;color:#5f7a70;line-height:1.5}
+    .reviews{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:1.6rem}
+    .review{background:#f8fffe;border:1.5px solid #d0e8df;border-radius:14px;padding:1rem}
+    .stars{color:#f59e0b;font-size:13px;margin-bottom:5px}
+    .review q{font-family:'Lora',serif;font-size:13px;font-style:italic;color:#2a5043;line-height:1.5}
+    .review cite{display:block;font-size:12px;font-weight:700;color:#5f7a70;margin-top:6px;font-style:normal}
+    .agent-card{display:flex;align-items:center;gap:14px;background:#f0faf5;border-radius:16px;padding:1.1rem 1.3rem;max-width:520px;margin:0 auto 2rem}
+    .agent-avatar{width:52px;height:52px;border-radius:50%;background:#1d9e75;color:#fff;font-family:'Lora',serif;font-size:1.2rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .agent-info h3{font-size:14.5px;font-weight:800;color:#1a3d2e;margin-bottom:2px}
+    .agent-info p{font-size:12.5px;color:#5f7a70}
+    .cta-bottom{background:#1a6e56;padding:2rem 1.5rem;text-align:center}
+    .cta-bottom h2{font-family:'Lora',serif;color:#fff;font-size:1.2rem;margin-bottom:.5rem}
+    .cta-bottom p{color:rgba(255,255,255,.8);font-size:13.5px;margin-bottom:1.2rem}
+    .cta-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .cta-link{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:12px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;text-decoration:none;transition:opacity .2s}
+    .cta-link:hover{opacity:.85}
+    .cta-link.phone{background:#fff;color:#1a6e56}
+    .cta-link.email{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.7)}
+    .footer{background:#0f2e22;padding:1.2rem;text-align:center;font-size:12px;color:rgba(255,255,255,0.45)}
+    @media(max-width:480px){
+      .hero h1{font-size:1.7rem}
+      .row2{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:1fr}
+      .driver-grid{grid-template-columns:1fr}
+      .reviews{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="logo-name">Prime Fidelity Insurance Agency</div>
+  <div class="badge">Your One-Stop Insurance Agency</div>
+  <h1>Coverage for every part<br>of your life.</h1>
+  <p>Auto, home, business & more — get a free quote and Salma will call you back personally to find you the best rate.</p>
+  <div class="trust-row">
+    <div class="trust-chip">✓ No spam calls</div>
+    <div class="trust-chip">✓ Free quotes</div>
+    <div class="trust-chip">✓ Local agent</div>
+    <div class="trust-chip">✓ All driver types</div>
+  </div>
+</div>
+
+<div class="form-wrap">
+  <div class="card-float">
+    <h2>Get your free quote</h2>
+    <p class="sub">Fill out the form and Salma will call you back — usually within 15 minutes.</p>
+    <div id="lead-form">
+      <div class="row2">
+        <div class="form-group"><label>First name</label><input type="text" id="fname" placeholder="Maria"></div>
+        <div class="form-group"><label>Last name</label><input type="text" id="lname" placeholder="Lopez"></div>
+      </div>
+      <div class="form-group"><label>Phone number</label><input type="tel" id="phone" placeholder="(909) 555-0100"></div>
+      <div class="form-group"><label>ZIP code</label><input type="text" id="zip" placeholder="92880" maxlength="5"></div>
+      <div class="form-group">
+        <label>Type of insurance needed</label>
+        <select id="itype">
+          <option value="">Select...</option>
+          <option>Auto Insurance</option>
+          <option>Homeowners Insurance</option>
+          <option>Commercial Insurance</option>
+          <option>General Liability</option>
+          <option>Business Insurance</option>
+          <option>Multiple types</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Driver type (if auto)</label>
+        <select id="dtype">
+          <option value="">Select...</option>
+          <option>Standard driver</option>
+          <option>SR-22 required</option>
+          <option>Unlicensed driver</option>
+          <option>International license</option>
+          <option>Bad driving record</option>
+          <option>N/A – Not auto insurance</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Best time to call</label>
+        <select>
+          <option value="">Select...</option>
+          <option>Morning (8am – 12pm)</option>
+          <option>Afternoon (12pm – 5pm)</option>
+          <option>Evening (5pm – 8pm)</option>
+          <option>Anytime</option>
+        </select>
+      </div>
+      <button class="btn-call" onclick="submitForm()">📞 Request my free callback</button>
+      <p class="disclaimer">By submitting, you agree to be contacted by a licensed insurance agent. We never sell your information.</p>
+    </div>
+    <div class="success-msg" id="success">
+      <div class="icon">🎉</div>
+      <h3>You're all set!</h3>
+      <p>Salma will call you back shortly. Talk soon!</p>
+    </div>
+  </div>
+</div>
+
+<div class="contact-bar">
+  <a href="tel:9093153737" class="contact-btn phone">📞 Call (909) 315-3737</a>
+  <a href="mailto:sahmad1552@yahoo.com" class="contact-btn email">✉️ Email Salma</a>
+</div>
+
+<div class="services-section">
+  <div class="section-title">What we cover</div>
+  <div class="section-sub">One agency for all your insurance needs — personal and business.</div>
+  <div class="services-grid">
+    <div class="service-card highlight">
+      <div class="sicon">🚗</div>
+      <h3>Auto Insurance</h3>
+      <p>All driver types welcome — standard, SR-22, unlicensed, international & bad record.</p>
+    </div>
+    <div class="service-card">
+      <div class="sicon">🏠</div>
+      <h3>Homeowners Insurance</h3>
+      <p>Protect your home and belongings from fire, theft, liability & more.</p>
+    </div>
+    <div class="service-card">
+      <div class="sicon">🏢</div>
+      <h3>Commercial Insurance</h3>
+      <p>Coverage for your commercial property, vehicles, and operations.</p>
+    </div>
+    <div class="service-card">
+      <div class="sicon">🛡️</div>
+      <h3>General Liability</h3>
+      <p>Protect your business from third-party claims, injuries & property damage.</p>
+    </div>
+    <div class="service-card" style="grid-column:1/-1">
+      <div class="sicon">💼</div>
+      <h3>Business Insurance</h3>
+      <p>Comprehensive coverage for small and medium businesses — BOP, workers comp, professional liability & more.</p>
+    </div>
+  </div>
+</div>
+
+<div class="special-section">
+  <h2>We insure ALL types of drivers</h2>
+  <p class="intro">No matter your situation — we have a policy for you. Don't let your record or license status stop you from getting covered.</p>
+  <div class="driver-grid">
+    <div class="driver-card"><div class="dicon">📋</div><h3>SR-22</h3><p>Need an SR-22 filing? We handle it fast and get you back on the road.</p></div>
+    <div class="driver-card"><div class="dicon">🪪</div><h3>Unlicensed drivers</h3><p>No license? We have coverage options that work for you.</p></div>
+    <div class="driver-card"><div class="dicon">🌎</div><h3>International license</h3><p>Driving with a foreign or international license — we've got you covered.</p></div>
+    <div class="driver-card"><div class="dicon">🛡️</div><h3>Bad driving record</h3><p>Accidents, tickets, DUI — we find carriers who will insure you.</p></div>
+  </div>
+  <a href="tel:9093153737" class="btn-special">📞 Call now — we can help</a>
+</div>
+
+<div class="section">
+  <div class="section-title">Carriers we work with</div>
+  <div class="section-sub">We shop multiple top-rated carriers to find you the best rate.</div>
+  <div class="carrier-group">
+    <div class="carrier-group-label">Standard market</div>
+    <div class="carrier-chips">
+      <span class="carrier-chip">Progressive</span><span class="carrier-chip">Travelers</span><span class="carrier-chip">Bristol West</span><span class="carrier-chip">Nationwide</span><span class="carrier-chip">Mercury Insurance</span><span class="carrier-chip">Kemper</span><span class="carrier-chip">Safeco</span><span class="carrier-chip">Infinity Auto</span>
+    </div>
+  </div>
+  <div class="carrier-group">
+    <div class="carrier-group-label">Non-standard &amp; high-risk</div>
+    <div class="carrier-chips">
+      <span class="carrier-chip">Dairyland</span><span class="carrier-chip">The General</span><span class="carrier-chip">Access General</span>
+    </div>
+  </div>
+  <div class="carrier-group">
+    <div class="carrier-group-label">Specialty &amp; SR-22</div>
+    <div class="carrier-chips">
+      <span class="carrier-chip">IDS</span><span class="carrier-chip">Anchor General</span>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-title">How it works</div>
+  <div class="section-sub">Getting covered is easier than you think.</div>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-text"><h3>Fill out the quick form</h3><p>Just a few details — takes under 60 seconds.</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><h3>Salma calls you back fast</h3><p>A friendly licensed agent reaches out — usually within 15 minutes.</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><h3>Compare &amp; choose your plan</h3><p>We walk you through coverage options that fit your budget and needs.</p></div></div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-title">Your local agent</div>
+  <div class="section-sub" style="margin-bottom:1.2rem">A real person — not a robot — ready to help you.</div>
+  <div class="agent-card">
+    <div class="agent-avatar">SA</div>
+    <div class="agent-info">
+      <h3>Salma Ahmad</h3>
+      <p>Licensed Insurance Agent · Prime Fidelity Insurance Agency</p>
+      <p style="margin-top:3px;color:#1d9e75;font-weight:700;font-size:12.5px">(909) 315-3737 · sahmad1552@yahoo.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-title">What our customers say</div>
+  <div class="reviews">
+    <div class="review"><div class="stars">★★★★★</div><q>Salma bundled my auto and home insurance and saved me over $600 a year!</q><cite>— Jessica T., Corona CA</cite></div>
+    <div class="review"><div class="stars">★★★★★</div><q>I needed SR-22 and they got it done same day. Called back in under 10 minutes!</q><cite>— Carlos M., Riverside CA</cite></div>
+    <div class="review"><div class="stars">★★★★★</div><q>She helped me get general liability for my business fast. Very professional!</q><cite>— Mike R., Ontario CA</cite></div>
+    <div class="review"><div class="stars">★★★★★</div><q>International license, no problem. Salma found me great coverage right away.</q><cite>— Fatima L., San Bernardino CA</cite></div>
+  </div>
+</div>
+
+<div class="cta-bottom">
+  <h2>Ready to talk? Reach out directly.</h2>
+  <p>Salma is here to answer your questions — no pressure, no obligation.</p>
+  <div class="cta-links">
+    <a href="tel:9093153737" class="cta-link phone">📞 Call (909) 315-3737</a>
+    <a href="mailto:sahmad1552@yahoo.com" class="cta-link email">✉️ sahmad1552@yahoo.com</a>
+  </div>
+</div>
+
+<div class="footer">© 2026 Prime Fidelity Insurance Agency · Licensed Insurance Agent · Salma Ahmad</div>
+
+<script>
+async function submitForm(){
+  var fname = document.getElementById('fname').value.trim();
+  var lname = document.getElementById('lname').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+  var zip   = document.getElementById('zip').value.trim();
+  var itype = document.getElementById('itype').value;
+  var dtype = document.getElementById('dtype').value;
+  var btime = document.querySelector('select:last-of-type') ? document.querySelectorAll('select')[2].value : '';
+
+  if(!fname || !phone){alert('Please enter at least your name and phone number.');return;}
+
+  var btn = document.querySelector('.btn-call');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  var data = {
+    access_key: 'cdd02184-00ea-41c3-9c30-150765d46880',
+    subject: 'New Lead – Prime Fidelity Insurance Agency',
+    replyto: 'salma.primefidelityins@gmail.com',
+    from_name: 'Prime Fidelity Website',
+    name: fname + ' ' + lname,
+    phone: phone,
+    zip: zip,
+    insurance_type: itype,
+    driver_type: dtype,
+    best_time_to_call: btime,
+    message: 'New lead from website:\n\nName: ' + fname + ' ' + lname + '\nPhone: ' + phone + '\nZIP: ' + zip + '\nInsurance Type: ' + itype + '\nDriver Type: ' + dtype + '\nBest Time to Call: ' + btime
+  };
+
+  try {
+    var res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json', 'Accept':'application/json'},
+      body: JSON.stringify(data)
+    });
+    var json = await res.json();
+    if(json.success){
+      document.getElementById('lead-form').style.display='none';
+      document.getElementById('success').style.display='block';
+    } else {
+      alert('Something went wrong. Please call us directly at (909) 315-3737.');
+      btn.textContent = '📞 Request my free callback';
+      btn.disabled = false;
+    }
+  } catch(e) {
+    alert('Something went wrong. Please call us directly at (909) 315-3737.');
+    btn.textContent = '📞 Request my free callback';
+    btn.disabled = false;
+  }
+}
+</script>
+</body>
+</html>
